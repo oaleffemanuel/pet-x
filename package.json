@@ -1,38 +1,32 @@
 {
-  "name": "drmente",
-  "version": "0.1.0",
+  "name": "petx",
+  "version": "1.0.0",
+  "description": "Chatbot de análise de pets via WhatsApp",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS= next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
-    "build:local": "NODE_OPTIONS= next build",
     "start": "next start",
-    "lint": "eslint",
-    "test": "vitest"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@vercel/node": "^5.3.24",
-    "axios": "^1.12.2",
-    "ioredis": "^5.8.1",
-    "next": "15.5.4",
-    "openai": "^6.6.0",
-    "posthog-js": "^1.268.6",
-    "posthog-node": "^5.9.1",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@tailwindcss/postcss": "^4.1.18",
+    "@vercel/node": "^3.0.0",
+    "axios": "^1.6.0",
+    "ioredis": "^5.8.2",
+    "next": "^14.0.0",
+    "openai": "^4.20.0",
+    "posthog-js": "^1.306.2",
+    "posthog-node": "^5.17.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "redis": "^4.6.0",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/ioredis": "^4.28.10",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.5.4",
-    "msw": "^2.11.3",
-    "tailwindcss": "^4",
-    "typescript": "^5",
-    "vitest": "^3.2.4"
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
   }
 }

@@ -19,6 +19,15 @@ export interface WebhookPayload {
   sender: IncomingSender | OutgoingSender;
   source_id: string;
   event: string;
+  attachments?: Attachment[];  // ✅ ADICIONADO
+}
+
+export interface Attachment {  // ✅ NOVA INTERFACE
+  id: number;
+  file_type: string;
+  data_url: string;
+  thumb_url?: string;
+  file_size?: number;
 }
 
 export interface Conversation {
@@ -86,6 +95,7 @@ export interface Message {
     };
   };
   sender: IncomingSender | OutgoingSender;
+  attachments?: Attachment[];  // ✅ ADICIONADO
 }
 
 export interface IncomingSender {
